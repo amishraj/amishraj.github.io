@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Amish Raj</title>
+   <!--Import Google Icon Font-->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+   <!--Import materialize.css-->
+   <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://use.fontawesome.com/b8ac39e2af.js"></script>
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+       <link rel="stylesheet" href="portfolio.css">
+
+
+     <script src="https://kit.fontawesome.com/d9811417b5.js" crossorigin="anonymous"></script>
+
+     <script src="https://unpkg.com/scrollreveal"></script>
+     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+             
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+  <style>
+    ::-webkit-scrollbar{
+	width: 10px;
+}
+
+::-webkit-scrollbar-track-piece{
+	background-color: #FFF;
+}
+
+::-webkit-scrollbar-thumb{
+	background-color: #CBCBCB;
+	outline: 2px solid #FFF;
+	outline-offset: -2px;
+	border: .1px solid #B7B7B7;
+}
+
+::-webkit-scrollbar-thumb:hover{
+	background-color: #909090;
+}
+  </style>
+</head>
+<body style="overflow-x: hidden;">
+
+ <!-- <div class="row">
+    <div class="col s12 m9 l10">
+      <div id="introduction" class="section scrollspy">
+        <p>Content </p>
+      </div>
+
+      <div id="structure" class="section scrollspy">
+        <p>Content </p>
+      </div>
+
+      <div id="initialization" class="section scrollspy">
+        <p>Content </p>
+      </div>
+    </div>
+    <div class="col hide-on-small-only m3 l2">
+      <ul class="section table-of-contents">
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#structure">Structure</a></li>
+        <li><a href="#initialization">Intialization</a></li>
+      </ul>
+    </div>
+  </div> -->
+        
+<div class="fixed-action-btn">
+  <a class="btn-floating btn-large grey darken-4">
+    <i class="large material-icons">expand_less</i>
+  </a>
+  <ul>
+    <li><a class="btn-floating grey darken-3"
+       onclick=" M.toast({html: 'Email Copied to Clipboard!', classes: 'rounded'})"
+       (click)="copyText('amishu197@gmail.com');">
+       <i class="material-icons">email</i>
+      </a></li>
+    <li><a class="btn-floating grey darken-3" target = "_blank" href="https://twitter.com/notokayraj">
+      <i class="fa fa-twitter" aria-hidden="true"></i>
+    </a></li>
+    <li><a class="btn-floating grey darken-3" target = "_blank" href="https://www.linkedin.com/in/amish-raj-b61349153/">
+      <i class="fa fa-linkedin" aria-hidden="true"></i>
+    </a></li>
+    <li><a class="btn-floating grey darken-3" target = "_blank" href="https://www.instagram.com/okayraj/">
+      <i class="fa fa-instagram" aria-hidden="true"></i>
+    </a></li>
+  </ul>
+</div>
+
+  <!-- Work & Experience Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Work and Experience</h4>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves btn-flat">Close</a>
+    </div>
+  </div>
+
+  <!-- About Me Modal Structure -->
+  <div id="modal2" class="modal">
+        
+    <div class="col s12">
+      <!-- <h4>Amish Raj</h4> -->
+      <div class="card horizontal" style="margin-top: 0px !important; margin-bottom: 0px !important;">
+        <div class="card-image">
+          <img src="amishraj.jpg">
+        </div>
+        <div class="card-stacked">
+          <div class="card-content">
+            <p>Exploring Design is one thing I love to do, because this kind of work never ends. <br> <br>
+            </p><p class=" grey-text text-darken-3">
+            Finding new ideas, meeting new people and creating something new is a rush that I want to make a part of my professional 
+            as well as personal life. 
+            </p> <br>
+          </div>
+          <!-- <div class="card-action">
+            <a href="#" class="amber-text">Learn More</a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <!-- <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves btn-flat">Close</a>
+    </div> -->
+  </div>
+          
+<ul class="sidenav" id="mobile-demo">
+  <li><a href="#projects">Projects</a></li>
+  <li><a href="#skills">Skills & Languages</a></li>
+  <li><a href="https://drive.google.com/file/d/1XNbIXQul8-na72OPuHfoDrCgCwUroppT/view?usp=sharing"
+     target="_blank">Download Resume</a></li>
+  <li><a  href="modal1">Work & Experience</a></li>
+  <li><a href="badges.html">About Me</a></li>
+</ul>
+
+<div class="containeramish">
+  <div #mainbg id="mainbg"> <!--BLUR: (click)="blur= !blur; onmousemovedef()" -->
+
+  <img
+   src="amishraj2.jpg" alt="Amish Raj" 
+  style="width:100%;">
+
+
+</div>
+
+ <div class="top-right">
+  <nav style="position: sticky; background-color: rgba(0,0,0,0.85);">
+    <div class="nav-wrapper">
+      <!-- <a href="#!" class="brand-logo">Logo</a> -->
+
+      <!--Dropdown Contacts-->
+      <ul id="dropdown1" class="dropdown-content" style="background-color: rgb(255, 255, 255);  color:#000;">
+        <li><a class="text-black" href="#!">Email</a></li>
+        <li><a href="#!">Twitter</a></li>
+        <li><a href="#!">LinkedIn</a></li>
+        <li><a class="text-black" href="#!">Instagram</a></li>
+      </ul>
+
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills & Languages</a></li>
+        <li class="tooltipped" data-position="bottom" data-tooltip="Already Interested?">
+          <a class=" modal-trigger" href="#modal1">Work & Experience</a>
+        </li>
+        <li class="tooltipped" data-position="bottom" data-tooltip="Hi?">
+          <a class=" modal-trigger" href="#modal2">About Me</a>
+        </li>
+        <li class="tooltipped" data-position="bottom" data-tooltip="Back to Basics">
+          <a href="https://drive.google.com/file/d/1XNbIXQul8-na72OPuHfoDrCgCwUroppT/view?usp=sharing"
+          target="_blank">
+          <span>Download Resume </span> 
+          
+         
+        </a>
+      </li>
+        <!-- <li>
+          <a class="dropdown-trigger" href="#!" data-target="dropdown1">
+            Contact
+            <i class="material-icons right">arrow_drop_down</i>
+          </a>
+        </li> -->
+      </ul>
+    </div>
+  </nav>
+</div>
+
+
+  <!-- <div class="top-right">Top RIGHT</div> -->
+  <!-- <div class="top-left rellax">
+    <div class="card-panel grey darken-4 zoom">
+      UI Designer.
+    </div>
+  </div> -->
+
+  <!-- <div class="top-left left-align">
+    <h1 style="font-size: 250px; font-family: Arial, Helvetica, sans-serif;">Amish &nbsp; &nbsp; </h1>
+    <h1 style="font-size: 250px;">Raj</h1>
+  </div> -->
+
+ 
+</div> 
+
+
+
+
+       
+
+<!-- <div class="row">
+  <div class="col s12">
+    <div class="card horizontal small">
+      <div class="card-image">
+        <img src="amishraj2.jpg">
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+          <p>I am a very simple card. I am good at containing small bits of information.</p>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div> -->
+<div class="section white" >
+  <div class="row container">
+    
+
+
+    <h3 data-aos="fade-down" id="projects" class="section scrollspy header grey-text text-darken-2 headline" 
+     font-family: Helvetica !important;">
+    Projects
+  </h3>
+  
+
+<div class="row">
+
+<!--Fidelity Modal-->
+<!-- <embed src="assets/lofi.mp3" loop="true" autostart="true" width="0" height="0"> -->
+ 
+  
+<div id="modalFidelity" class="modal bottom-sheet">
+  <div class="modal-content">
+    <h4>Chapter Dashboard</h4>
+    <p>As Part of an Internship I did at Fidelity Investments, I built the front-end and UI for a tool called Chapter Dashboard.
+      This is a Project Management Tool built specifically for Chapter Leaders in a Spotify model to manager Chapter Members
+      and see squad related details. I used Angular 9 with Bootstrap 3 to Develop the front-end.
+    </p>
+    <p>
+      Due to company confidentiality rules I cannot provide URL and/or further specifics regarding the technology used
+    </p>
+      <p>Additionally, I also designed the logo from scratch</p>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">OK</a>
+  </div>
+</div>
+
+<div id="modaltpp" class="modal bottom-sheet">
+  <div class="modal-content">
+    <h4>Training & Placement Center App</h4>
+    <p>I developed an Android Application that has a very basic functionality for an interface between Placement Coordinators for an institute
+      and students sitting for various companies. 
+    </p>
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">OK</a>
+  </div>
+</div>
+        
+
+  <div class="col s4">
+    <div class="card cardfade" data-aos="fade-up">
+      <div class="card-image modal-trigger waves-effect waves-light" href="#modalFidelity">
+        <img src="cd.jpg" style="  filter: grayscale(100%)">
+        <span class="card-title">Chapter Dashboard</span>
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="col s4">
+    <div class="card cardfade1" data-aos="fade-up">
+      <div class="card-image modal-trigger waves-effect waves-light" href="#modaltpp">
+        <img src="study2.jpg" style="  filter: grayscale(100%)">
+        <span class="card-title">Training & Placement Center App</span>
+      </div>
+    </div>
+   
+</div>
+
+<div class="col s4">
+  <div class="card cardfade2" data-aos="fade-up">
+    <div class="card-image modal-trigger waves-effect waves-light"  >
+      <img src="thiswebsite1.jpg" style="  filter: grayscale(100%)">
+      <span class="card-title">This Website 100%!</span>
+    </div>
+  </div>
+ 
+</div>
+
+  
+  </div>
+
+  </div>
+</div>
+
+<div class="parallax-container">
+  <div class="parallax">
+    <img src="work.jpg" style="height:initial; width: 100%; filter: grayscale();">
+  </div>
+</div>
+<div class="section white">
+  <div class="row container">
+  <h3 id="skills" data-aos="fade-down" class="section scrollspy header grey-text text-darken-2 headline" style="font-family: Helvetica !important;">
+    Skills and Languages
+    
+  </h3>
+ 
+  <table data-aos="fade-up" class="responsive-table highlight tablefade">
+    <thead>
+      <tr>
+          <th>Skills</th>
+          <th>Skills but in a Different Column</th>
+          <th>More Skills (Ugh, enough already)</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>C++</td>
+        <td>SQL</td>
+        <td>Content Writing</td>
+      </tr>
+      <tr>
+        <td>TypeScript</td>
+        <td>Git and Github</td>
+        <td>Web Development</td>
+      </tr>
+      <tr>
+        <td>HTML</td>
+        <td>Front-End Back-end Integration</td>
+        <td>Caching </td>
+      </tr>
+      <tr>
+        <td>Session Storage</td>
+        <td>Parallel Storage</td>
+        <td>Debugging Using Chrome Dev Tools</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</div>
+
+
+
+<div class="parallax-container">
+  <div class="parallax"><img src="muzic.jpg" style="filter: grayscale();"></div>
+</div>
+<div class="section white">
+  
+  <div class="row container">
+    <h3 class="header grey-text text-darken-2" style="font-family: Helvetica !important;">
+    It isn't all work
+    
+  </h3>
+  <audio controls autoplay loop >
+
+      <source src="assets/lofi.mp3" type="audio/mpeg" >  
+     Your browser does not support the audio element.
+    
+     </audio>
+    <p class="grey-text text-darken-3 lighten-3">
+      The music you've been listening to? It's all me! I am a Beatmaker, Music Producer, and an Artist as well! Check out my music below</p>
+
+      <div class="col s5">
+        <iframe 
+        width="425" height="300" src="https://www.youtube.com/embed/4z5C34D57Rw" frameborder="0" 
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>  
+      </div>
+
+      <div class="col s5">
+        <iframe width="425" height="300" src="https://www.youtube.com/embed/xsnUU8dxHOU" 
+        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+      </div>
+    
+        
+      <div class="col s2">
+    
+        <iframe src="https://open.spotify.com/embed/artist/3Z8D9dvYbl5gsdSv1gcYNv"
+         width="300" height="300"
+         frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    
+        </div>
+  </div>
+</div>
+
+
+
+<footer class="page-footer" style="background-color:rgb(24, 24, 24);">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">Amish Raj</h5>
+        <p class="grey-text text-lighten-4">UI Designer. Developer. Getting things done.</p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Connect with me!</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="#!"
+            onclick=" M.toast({html: 'Email Copied to Clipboard!', classes: 'rounded'})"
+       (click)="copyText('amishu197@gmail.com');">
+       <i class="tiny material-icons">email</i> 
+       Email
+      </a>
+    </li>
+          <li><a class="grey-text text-lighten-3" target = "_blank" href="https://twitter.com/notokayraj"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a></li>
+          <li><a class="grey-text text-lighten-3" target = "_blank" href="https://www.linkedin.com/in/amish-raj-b61349153/"><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
+          <li><a class="grey-text text-lighten-3" target = "_blank" href="https://www.instagram.com/okayraj/"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+    © 2020 Amish Raj
+    <!-- <a class="grey-text text-lighten-4 right" href="#!">More Links</a> -->
+    </div>
+  </div>
+</footer>
+
+  <!--JavaScript at end of body for optimized loading-->
+  <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
+  <script src="anime.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init();
+</script>
+
+<script type="text/javascript"> 
+ ScrollReveal().reveal('.headline', { delay: 250 });
+  ScrollReveal().reveal('.tablefade', { delay: 350 });
+    ScrollReveal().reveal('.cardfade', { delay: 250 });
+  ScrollReveal().reveal('.cardfade1', { delay: 350 });
+  ScrollReveal().reveal('.cardfade2', { delay: 450 });
+
+</script>
+
+<script type="text/javascript">
+$( document ).ready(function(){
+$('.fixed-action-btn').floatingActionButton({
+});
+
+$(".dropdown-trigger").dropdown();
+$('.sidenav').sidenav();
+    $('.scrollspy').scrollSpy();
+$('.parallax').parallax();
+$('.collapsible').collapsible();
+$('.modal').modal();
+$('.slider').slider();
+$('.tooltipped').tooltip();
+
+});
+</script>
+
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>
