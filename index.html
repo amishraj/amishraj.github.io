@@ -97,7 +97,7 @@
   </ul>
 </div>
 
-  <!-- Work & Experience Modal Structure -->
+  <!-- Work & Experience Modal Structure 
   <div id="modal1" class="modal">
     <div class="modal-content">
       <h4>Work and Experience</h4>
@@ -105,7 +105,7 @@
     <div class="modal-footer">
       <a href="#!" class="modal-close waves-effect waves btn-flat">Close</a>
     </div>
-  </div>
+  </div> -->
 
   <!-- About Me Modal Structure -->
   <div id="modal2" class="modal">
@@ -140,7 +140,8 @@
   <li><a href="#skills">Skills & Languages</a></li>
   <li><a href="https://drive.google.com/file/d/1XNbIXQul8-na72OPuHfoDrCgCwUroppT/view?usp=sharing"
      target="_blank">Download Resume</a></li>
-  <li><a  href="modal1">Work & Experience</a></li>
+  <li><a  href="#">Work & Experience</a></li>
+    <li><a href="#cocurr">Hobbies & Interests</a></li>
   <li><a href="badges.html">About Me</a></li>
 </ul>
 
@@ -172,8 +173,9 @@
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills & Languages</a></li>
         <li class="tooltipped" data-position="bottom" data-tooltip="Already Interested?">
-          <a class=" modal-trigger" href="#modal1">Work & Experience</a>
+          <a href="#">Work & Experience</a>
         </li>
+            <li><a href="#cocurr">Hobbies & Interests</a></li>
         <li class="tooltipped" data-position="bottom" data-tooltip="Hi?">
           <a class=" modal-trigger" href="#modal2">About Me</a>
         </li>
@@ -242,7 +244,7 @@
 
     <h3 data-aos="fade-down" id="projects" class="section scrollspy header grey-text text-darken-2 headline" 
      font-family: Helvetica !important;">
-    Projects
+    Projects Showcase
   </h3>
   
 
@@ -312,15 +314,94 @@
  
 </div>
 
+
+
   
+  </div> <!-- End of Row 1 of projects -->
+
+  <div class="row">
+
+<!-- Lyriceum Modal -->
+ <div id="modalLyriceum" class="modal bottom-sheet">
+  <div class="modal-content">
+    <h4>Lyriceum</h4>
+    <p>Admit it, we all have a secret place where we copy & paste our favorite lyrics. But wouldn't it be easier to just have it all in one place?
+     <br>      <b> Welcome to Lyriceum </b> 
+    </p>
+     Now search the lyrics to your favorite songs and save your favorite parts immediately. The best part? Your saved lyrics will always stay on your device. <br> <br>
+     <a target="_blank" href="https://lyriceum.fail/">Try Lyriceum</a>
   </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">OK</a>
+  </div>
+</div> 
+
+<!-- AirThin Notes Modal -->
+ <div id="airthinnotesmodal" class="modal bottom-sheet">
+  <div class="modal-content">
+    <h4>AirThin Notes</h4>
+    AirThin Notes is a Lightweight WebApp that lets you take notes. <br>
+      No shenanigans, Minimal and Fast . <br><br>
+
+      The Best Part? Your notes won't disappear, whether you close your window or your browser itself. <br><br>
+
+        Try <a target="_blank" href="https://amishraj.github.io/airthinnotes/">AirThin Notes</a> 
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">OK</a>
+  </div>
+</div> 
+
+<div id="airthinccmodal" class="modal bottom-sheet">
+  <div class="modal-content">
+    <h4>AirThin Currency Converter</h4>
+   Another Mini-Project, AirThin Currency Convert is a Lightweight Currency Converter WebApp that makes use of the ExchangeRate API in order to fetch correct Currency Rates. <br> 
+   The rates are updated every day to ensure consistency. <br><br>
+
+        Try <a target="_blank" href="https://amishraj.github.io/airthincc/">AirThin Currency Converter</a> 
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">OK</a>
+  </div>
+</div> 
+
+  <div class="col s4">
+    <div class="card cardfade" data-aos="fade-up">
+      <div class="card-image modal-trigger waves-effect waves-light" href="#modalLyriceum">
+        <img src="lyriceum2.png" style="  filter: grayscale(100%)">
+        <span class="card-title">Lyriceum</span>
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="col s4">
+    <div class="card cardfade1" data-aos="fade-up">
+      <div class="card-image modal-trigger waves-effect waves-light" href="#airthinnotesmodal">
+        <img src="airthinnotes.jpg" style="  filter: grayscale(100%)">
+        <span class="card-title">AirThin Notes</span>
+      </div>
+    </div>
+   
+</div>
+
+<div class="col s4">
+  <div class="card cardfade2" data-aos="fade-up">
+    <div class="card-image modal-trigger waves-effect waves-light" href="#airthinccmodal">
+      <img src="airthincc.jpg" style="  filter: brightness(50%) grayscale(100%);">
+      <span class="card-title">AirThin Currency Converter</span>
+    </div>
+  </div>
+ 
+</div>
+</div>
 
   </div>
 </div>
 
 <div class="parallax-container">
   <div class="parallax">
-    <img src="work.jpg" style="height:initial; width: 100%; filter: grayscale();">
+    <img src="work.jpg" style="height:initial; width: 100%; filter: brightness(75%) grayscale();">
   </div>
 </div>
 <div class="section white">
@@ -373,34 +454,34 @@
 <div class="section white">
   
   <div class="row container">
-    <h3 class="header grey-text text-darken-2" style="font-family: Helvetica !important;">
+    <h3 id="cocurr" data-aos="fade-down" class="section scrollspy header grey-text text-darken-2" style="font-family: Helvetica !important;">
     It isn't all work
     
   </h3>
-  <audio controls autoplay loop >
+  <audio controls autoplay loop data-aos="fade-up">
 
       <source src="lofi.mp3" type="audio/mpeg" >  
      Your browser does not support the audio element.
     
      </audio>
-    <p class="grey-text text-darken-3 lighten-3">
+    <p class="grey-text text-darken-3 lighten-3" data-aos="fade-up">
       The music you've been listening to? It's all me! I am a Beatmaker, Music Producer, and an Artist as well! Check out my music below</p>
 
-      <div class="col s5">
+      <div class="col s5" data-aos="fade-up">
         <iframe 
         width="425" height="300" src="https://www.youtube.com/embed/4z5C34D57Rw" frameborder="0" 
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
         </iframe>  
       </div>
 
-      <div class="col s5">
+      <div class="col s5" data-aos="fade-up">
         <iframe width="425" height="300" src="https://www.youtube.com/embed/xsnUU8dxHOU" 
         frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
         allowfullscreen></iframe>
       </div>
     
         
-      <div class="col s2">
+      <div class="col s2" data-aos="fade-up">
     
         <iframe src="https://open.spotify.com/embed/artist/3Z8D9dvYbl5gsdSv1gcYNv"
          width="300" height="300"
