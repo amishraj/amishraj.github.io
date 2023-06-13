@@ -1,491 +1,1070 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <title>Amish Raj</title>
-   <!--Import Google Icon Font-->
-   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-   <!--Import materialize.css-->
-   <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <meta charset="utf-8">
+    <title>Amish Raj</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free Website Template" name="keywords">
+    <meta content="Free Website Template" name="description">
 
-     <!-- Compiled and minified CSS -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
 
-     <!-- Compiled and minified JavaScript -->
-     <script src="https://use.fontawesome.com/b8ac39e2af.js"></script>
-     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-       <link rel="stylesheet" href="portfolio.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
+    <!-- CSS Libraries -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
-     <script src="https://kit.fontawesome.com/d9811417b5.js" crossorigin="anonymous"></script>
-
-     <script src="https://unpkg.com/scrollreveal"></script>
-     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-             
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- <link rel="icon" type="image/x-icon" href="favicon.ico"> -->
-
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-
-  <style>
-    ::-webkit-scrollbar{
-	width: 10px;
-}
-
-::-webkit-scrollbar-track-piece{
-	background-color: #FFF;
-}
-
-::-webkit-scrollbar-thumb{
-	background-color: #CBCBCB;
-	outline: 2px solid #FFF;
-	outline-offset: -2px;
-	border: .1px solid #B7B7B7;
-}
-
-::-webkit-scrollbar-thumb:hover{
-	background-color: #909090;
-}
-  </style>
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
 </head>
-<body style="overflow-x: hidden;">
 
- <!-- <div class="row">
-    <div class="col s12 m9 l10">
-      <div id="introduction" class="section scrollspy">
-        <p>Content </p>
-      </div>
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Nav Bar Start -->
+    <div class="navbar navbar-expand-lg bg-light navbar-light">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand">Amish Raj</a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-      <div id="structure" class="section scrollspy">
-        <p>Content </p>
-      </div>
-
-      <div id="initialization" class="section scrollspy">
-        <p>Content </p>
-      </div>
-    </div>
-    <div class="col hide-on-small-only m3 l2">
-      <ul class="section table-of-contents">
-        <li><a href="#introduction">Introduction</a></li>
-        <li><a href="#structure">Structure</a></li>
-        <li><a href="#initialization">Intialization</a></li>
-      </ul>
-    </div>
-  </div> -->
-        
-<div class="fixed-action-btn">
-  <a class="btn-floating btn-large grey darken-4">
-    <i class="large material-icons">expand_less</i>
-  </a>
-  <ul>
-    <li><a class="btn-floating grey darken-3"
-       onclick=" M.toast({html: 'Email Copied to Clipboard!', classes: 'rounded'})"
-       (click)="copyText('amishu197@gmail.com');">
-       <i class="material-icons">email</i>
-      </a></li>
-    <li><a class="btn-floating grey darken-3" target = "_blank" href="https://twitter.com/notokayraj">
-      <i class="fa fa-twitter" aria-hidden="true"></i>
-    </a></li>
-    <li><a class="btn-floating grey darken-3" target = "_blank" href="https://www.linkedin.com/in/amish-raj-b61349153/">
-      <i class="fa fa-linkedin" aria-hidden="true"></i>
-    </a></li>
-    <li><a class="btn-floating grey darken-3" target = "_blank" href="https://www.instagram.com/okayraj/">
-      <i class="fa fa-instagram" aria-hidden="true"></i>
-    </a></li>
-  </ul>
-</div>
-
-  <!-- Work & Experience Modal Structure -->
-  <div id="modal1" class="modal">
-    <div class="modal-content">
-      <h4>Work and Experience</h4>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves btn-flat">Close</a>
-    </div>
-  </div>
-
-  <!-- About Me Modal Structure -->
-  <div id="modal2" class="modal">
-        
-    <div class="col s12">
-      <!-- <h4>Amish Raj</h4> -->
-      <div class="card horizontal" style="margin-top: 0px !important; margin-bottom: 0px !important;">
-        <div class="card-image">
-          <img src="amishraj.jpg">
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav ml-auto">
+                    <a href="#home" class="nav-item nav-link active">Home</a>
+                    <a href="#about" class="nav-item nav-link">About</a>
+                    <a href="#service" class="nav-item nav-link">Skills & Languages</a>
+                    <a href="#experience" class="nav-item nav-link">Experience</a>
+                    <a href="#portfolio" class="nav-item nav-link">Projects</a>
+                    <!-- <a href="#price" class="nav-item nav-link">Price</a>
+                        <a href="#review" class="nav-item nav-link">Review</a>
+                        <a href="#team" class="nav-item nav-link">Team</a>
+                        <a href="#blog" class="nav-item nav-link">Blog</a> -->
+                    <!-- <a href="#contact" class="nav-item nav-link">Contact</a> -->
+                </div>
+            </div>
         </div>
-        <div class="card-stacked">
-          <div class="card-content">
-            <p>Exploring Design is one thing I love to do, because this kind of work never ends. <br> <br>
-            </p><p class=" grey-text text-darken-3">
-            Finding new ideas, meeting new people and creating something new is a rush that I want to make a part of my professional 
-            as well as personal life. 
-            </p> <br>
-          </div>
-          <!-- <div class="card-action">
-            <a href="#" class="amber-text">Learn More</a>
-          </div> -->
+    </div>
+    <!-- Nav Bar End -->
+
+
+    <!-- Hero Start -->
+    <div class="hero" id="home">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-sm-12 col-md-6">
+                    <div class="hero-content">
+                        <div class="hero-text">
+                            <p>I'm</p>
+                            <h1>Amish Raj</h1>
+                            <h2></h2>
+                            <div class="typed-text">Web Developer, Full-Stack Software Engineer, Problem Solver, MS in
+                                Computer Science</div>
+                        </div>
+                        <div class="hero-btn">
+                            <a class="btn"
+                                href="https://drive.google.com/file/d/1WPlY5oB8hAFGgfkEzewAjNkNAtF_oLDT/view?usp=sharing"
+                                target="_blank">Resume</a>
+                            <a class="btn" href="mailto:amish.raj@gwu.edu" target="_blank">Contact Me</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 d-none d-md-block">
+                    <div class="hero-image">
+                        <img src="img/hero2.png" alt="Hero Image">
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-    <!-- <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves btn-flat">Close</a>
-    </div> -->
-  </div>
-          
-<ul class="sidenav" id="mobile-demo">
-  <li><a href="#projects">Projects</a></li>
-  <li><a href="#skills">Skills & Languages</a></li>
-  <li><a href="https://drive.google.com/file/d/1XNbIXQul8-na72OPuHfoDrCgCwUroppT/view?usp=sharing"
-     target="_blank">Download Resume</a></li>
-  <li><a  href="modal1">Work & Experience</a></li>
-  <li><a href="badges.html">About Me</a></li>
-</ul>
-
-<div class="containeramish">
-  <div #mainbg id="mainbg"> <!--BLUR: (click)="blur= !blur; onmousemovedef()" -->
-
-  <img
-   src="amishraj2.jpg" alt="Amish Raj" 
-  style="width:100%;">
+    <!-- Hero End -->
 
 
-</div>
-
- <div class="top-right">
-  <nav style="position: sticky; background-color: rgba(0,0,0,0.85);">
-    <div class="nav-wrapper">
-      <!-- <a href="#!" class="brand-logo">Logo</a> -->
-
-      <!--Dropdown Contacts-->
-      <ul id="dropdown1" class="dropdown-content" style="background-color: rgb(255, 255, 255);  color:#000;">
-        <li><a class="text-black" href="#!">Email</a></li>
-        <li><a href="#!">Twitter</a></li>
-        <li><a href="#!">LinkedIn</a></li>
-        <li><a class="text-black" href="#!">Instagram</a></li>
-      </ul>
-
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills & Languages</a></li>
-        <li class="tooltipped" data-position="bottom" data-tooltip="Already Interested?">
-          <a class=" modal-trigger" href="#modal1">Work & Experience</a>
-        </li>
-        <li class="tooltipped" data-position="bottom" data-tooltip="Hi?">
-          <a class=" modal-trigger" href="#modal2">About Me</a>
-        </li>
-        <li class="tooltipped" data-position="bottom" data-tooltip="Back to Basics">
-          <a href="https://drive.google.com/file/d/1XNbIXQul8-na72OPuHfoDrCgCwUroppT/view?usp=sharing"
-          target="_blank">
-          <span>Download Resume </span> 
-          
-         
-        </a>
-      </li>
-        <!-- <li>
-          <a class="dropdown-trigger" href="#!" data-target="dropdown1">
-            Contact
-            <i class="material-icons right">arrow_drop_down</i>
-          </a>
-        </li> -->
-      </ul>
-    </div>
-  </nav>
-</div>
-
-
-  <!-- <div class="top-right">Top RIGHT</div> -->
-  <!-- <div class="top-left rellax">
-    <div class="card-panel grey darken-4 zoom">
-      UI Designer.
-    </div>
-  </div> -->
-
-  <!-- <div class="top-left left-align">
-    <h1 style="font-size: 250px; font-family: Arial, Helvetica, sans-serif;">Amish &nbsp; &nbsp; </h1>
-    <h1 style="font-size: 250px;">Raj</h1>
-  </div> -->
-
- 
-</div> 
-
-
-
-
-       
-
-<!-- <div class="row">
-  <div class="col s12">
-    <div class="card horizontal small">
-      <div class="card-image">
-        <img src="amishraj2.jpg">
-      </div>
-      <div class="card-stacked">
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.</p>
+    <!-- About Start -->
+    <div class="about wow fadeInUp" data-wow-delay="0.1s" id="about">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="about-img">
+                        <img src="img/about.jpg" alt="Image">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <div class="section-header text-left">
+                            <p>Learn About Me</p>
+                            <h2>1+ years of experience</h2>
+                        </div>
+                        <div class="about-text">
+                            <p>
+                                As a results-focused <b> Software Developer</b> with a strong background in web
+                                application
+                                development and testing, I am dedicated to delivering high-quality solutions. I firmly
+                                believe in the power of <b> Test-Driven Development</b> to create robust and
+                                user-friendly
+                                applications that meet and exceed client expectations. <br> <br> With a wealth of
+                                experience in promoting and executing <b> objective-oriented</b> approaches to real-time
+                                software development, I am well-versed in <b> Agile</b> and <b> Scrum</b> environments,
+                                ensuring
+                                efficient collaboration and timely project delivery. My critical thinking skills and
+                                meticulous attention to detail enable me to identify and resolve complex issues,
+                                ensuring the development of <b> reliable</b> and <b>scalable software solutions</b>.
+                            </p>
+                        </div>
+                        <div class="skills">
+                            <div class="skill-name">
+                                <p>Web Development</p>
+                                <p>95%</p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                            <div class="skill-name">
+                                <p>Test-Driven Development</p>
+                                <p>85%</p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                            <div class="skill-name">
+                                <p>Programming</p>
+                                <p>90%</p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                            <div class="skill-name">
+                                <p>Agile & Scrum</p>
+                                <p>95%</p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
+                                    aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        Learn more:
+                        <a href="https://github.com/amishraj" target="_blank" class="social-icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/amishraj/" target="_blank" class="social-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Service Start -->
+    <div class="service" id="service">
+        <div class="container">
+            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                <p>What I do</p>
+                <h2>Skills and Languages</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fa fa-laptop"></i>
+                        </div>
+                        <div class="service-text">
+                            <h3>Languages</h3>
+                            <p>
+                                Java, C, C++, Python, JavaScript, TypeScript, SQL, Kotlin
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fa fa-laptop-code"></i>
+                        </div>
+                        <div class="service-text">
+                            <h3>Developer Tools</h3>
+                            <p>
+                                VS Code, Android Studio, Chrome Developer Tools, Chrome Debugger, Eclipse, Jira,
+                                uDeploy, SONAR, Jenkins, SDL Tridion
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fab fa-android"></i>
+                        </div>
+                        <div class="service-text">
+                            <h3>Technologies/Frameworks</h3>
+                            <p>
+                                Angular, ReactJS, NodeJS, ExpressJS, JUNIT5, Cypress, Jasmine, Git, GitHub, Putty
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="service-item">
+                        <div class="service-icon">
+                            <i class="fab fa-apple"></i>
+                        </div>
+                        <div class="service-text">
+                            <h3>Operating Systems</h3>
+                            <p>
+                                Linux, MacOS, Windows
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-
-</div> -->
-<div class="section white" >
-  <div class="row container">
-    
+    <!-- Service End -->
 
 
-    <h3 data-aos="fade-down" id="projects" class="section scrollspy header grey-text text-darken-2 headline" 
-     font-family: Helvetica !important;">
-    Projects
-  </h3>
-  
-
-<div class="row">
-
-<!--Fidelity Modal-->
-<!-- <embed src="assets/lofi.mp3" loop="true" autostart="true" width="0" height="0"> -->
- 
-  
-<div id="modalFidelity" class="modal bottom-sheet">
-  <div class="modal-content">
-    <h4>Chapter Dashboard</h4>
-    <p>As Part of an Internship I did at Fidelity Investments, I built the front-end and UI for a tool called Chapter Dashboard.
-      This is a Project Management Tool built specifically for Chapter Leaders in a Spotify model to manager Chapter Members
-      and see squad related details. I used Angular 9 with Bootstrap 3 to Develop the front-end.
-    </p>
-    <p>
-      Due to company confidentiality rules I cannot provide URL and/or further specifics regarding the technology used
-    </p>
-      <p>Additionally, I also designed the logo from scratch</p>
-  </div>
-  <div class="modal-footer">
-    <a href="#!" class="modal-close waves-effect waves-green btn-flat">OK</a>
-  </div>
-</div>
-
-<div id="modaltpp" class="modal bottom-sheet">
-  <div class="modal-content">
-    <h4>Training & Placement Center App</h4>
-    <p>I developed an Android Application that has a very basic functionality for an interface between Placement Coordinators for an institute
-      and students sitting for various companies. 
-    </p>
-  </div>
-  <div class="modal-footer">
-    <a href="#!" class="modal-close waves-effect waves-green btn-flat">OK</a>
-  </div>
-</div>
-        
-
-  <div class="col s4">
-    <div class="card cardfade" data-aos="fade-up">
-      <div class="card-image modal-trigger waves-effect waves-light" href="#modalFidelity">
-        <img src="cd.jpg" style="  filter: grayscale(100%)">
-        <span class="card-title">Chapter Dashboard</span>
-      </div>
-    </div>
-    
-  </div>
-
-  <div class="col s4">
-    <div class="card cardfade1" data-aos="fade-up">
-      <div class="card-image modal-trigger waves-effect waves-light" href="#modaltpp">
-        <img src="study2.jpg" style="  filter: grayscale(100%)">
-        <span class="card-title">Training & Placement Center App</span>
-      </div>
-    </div>
-   
-</div>
-
-<div class="col s4">
-  <div class="card cardfade2" data-aos="fade-up">
-    <div class="card-image modal-trigger waves-effect waves-light"  >
-      <img src="thiswebsite1.jpg" style="  filter: grayscale(100%)">
-      <span class="card-title">This Website 100%!</span>
-    </div>
-  </div>
- 
-</div>
-
-  
-  </div>
-
-  </div>
-</div>
-
-<div class="parallax-container">
-  <div class="parallax">
-    <img src="work.jpg" style="height:initial; width: 100%; filter: grayscale();">
-  </div>
-</div>
-<div class="section white">
-  <div class="row container">
-  <h3 id="skills" data-aos="fade-down" class="section scrollspy header grey-text text-darken-2 headline" style="font-family: Helvetica !important;">
-    Skills and Languages
-    
-  </h3>
- 
-  <table data-aos="fade-up" class="responsive-table highlight tablefade">
-    <thead>
-      <tr>
-          <th>Skills</th>
-          <th>Skills but in a Different Column</th>
-          <th>More Skills (Ugh, enough already)</th>
-      </tr>
-    </thead>
-
-    <tbody>
-      <tr>
-        <td>C++</td>
-        <td>SQL</td>
-        <td>Content Writing</td>
-      </tr>
-      <tr>
-        <td>TypeScript</td>
-        <td>Git and Github</td>
-        <td>Web Development</td>
-      </tr>
-      <tr>
-        <td>HTML</td>
-        <td>Front-End Back-end Integration</td>
-        <td>Caching </td>
-      </tr>
-      <tr>
-        <td>Session Storage</td>
-        <td>Parallel Storage</td>
-        <td>Debugging Using Chrome Dev Tools</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-</div>
-
-
-
-<div class="parallax-container">
-  <div class="parallax"><img src="muzic.jpg" style="filter: grayscale();"></div>
-</div>
-<div class="section white">
-  
-  <div class="row container">
-    <h3 class="header grey-text text-darken-2" style="font-family: Helvetica !important;">
-    It isn't all work
-    
-  </h3>
-  <audio controls autoplay loop >
-
-      <source src="lofi.mp3" type="audio/mpeg" >  
-     Your browser does not support the audio element.
-    
-     </audio>
-    <p class="grey-text text-darken-3 lighten-3">
-      The music you've been listening to? It's all me! I am a Beatmaker, Music Producer, and an Artist as well! Check out my music below</p>
-
-      <div class="col s5">
-        <iframe 
-        width="425" height="300" src="https://www.youtube.com/embed/4z5C34D57Rw" frameborder="0" 
-        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-        </iframe>  
-      </div>
-
-      <div class="col s5">
-        <iframe width="425" height="300" src="https://www.youtube.com/embed/xsnUU8dxHOU" 
-        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen></iframe>
-      </div>
-    
-        
-      <div class="col s2">
-    
-        <iframe src="https://open.spotify.com/embed/artist/3Z8D9dvYbl5gsdSv1gcYNv"
-         width="300" height="300"
-         frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-    
+    <!-- Experience Start -->
+    <div class="experience" id="experience">
+        <div class="container">
+            <header class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                <p>My Resume</p>
+                <h2>Work Experience & Education</h2>
+            </header>
+            <div class="timeline">
+                <div class="timeline-item right wow slideInLeft" data-wow-delay="0.1s">
+                    <div class="timeline-text">
+                        <div class="timeline-date">2022 - Current</div>
+                        <h2>Master of Science in Computer Science</h2>
+                        <h4>The George Washington University, Washington DC, USA</h4>
+                        <p>
+                            • Design and Analysis of Algorithms <br>
+                            • Advanced Software Paradigms <br>
+                            • Computer Architecture II <br>
+                            • Introduction to Big Data and Analytics <br>
+                            • Object Oriented Design <br>
+                            • Machine Learning
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+                    <div class="timeline-text">
+                        <div class="timeline-date">2021 - 2022</div>
+                        <h2>Software Engineer</h2>
+                        <h4>Fidelity Investments, Bengaluru, India</h4>
+                        <p>
+                            • Underwent the <b> LEAP training program</b> for Full Stack Engineering spanning 4 months <br>
+                            • Developed web-apps using <b> Angular</b> UI framework and <b> Node.JS</b> while closely working with
+                            <b> Business</b>, <b> UI/UX</b> and <b> Content</b> teams <br>
+                            • Worked with <b> Agile</b> & <b> DevOps</b> methodologies and development best practices to enhance product
+                            development <br>
+                            • Conducted <b> pre-release activities</b> and collaborated with product owners to select ambitious,
+                            but realistic coding milestones on software development <br>
+                            • Managed the <b> CI/CD Pipelines</b> via the <b> Jenkins tool</b> <br>
+                            • Worked on several POCs based on <b> Angular</b>, <b> NodeJS</b> & <b> Java</b> to enhance business capabilities
+                            and improve productivity
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
+                    <div class="timeline-text">
+                        <div class="timeline-date">May 2020 - June 2020</div>
+                        <h2>Software Engineer Intern</h2>
+                        <h4>Fidelity Investments, Bengaluru, India</h4>
+                        <p>
+                            • Worked on the complete <b> Angular</b> front-end part of a web-app from scratch as well as
+                            integrated it with a <b> Node.JS</b> backend<br>
+                            • Deployed the project on a <b> cloud VM</b> instance and ran a <b> Jenkins</b> job to automate pulling data
+                            from various APIs.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+                    <div class="timeline-text">
+                        <div class="timeline-date">2017 - 2021</div>
+                        <h2>Bachelor of Technology in Computer Science and Engineering</h2>
+                        <h4>Malaviya National Institute of Technology, Jaipur, India</h4>
+                        <p>
+                            • Design and Analysis of Algorithms <br>
+                            • Advanced Software Paradigms <br>
+                            • Computer Architecture II <br>
+                            • Introduction to Big Data and Analytics <br>
+                            • Object Oriented Design <br>
+                            • Machine Learning
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-  </div>
-</div>
-
-
-
-<footer class="page-footer" style="background-color:rgb(24, 24, 24);">
-  <div class="container">
-    <div class="row">
-      <div class="col l6 s12">
-        <h5 class="white-text">Amish Raj</h5>
-        <p class="grey-text text-lighten-4">UI Designer. Developer. Getting things done.</p>
-      </div>
-      <div class="col l4 offset-l2 s12">
-        <h5 class="white-text">Connect with me!</h5>
-        <ul>
-          <li><a class="grey-text text-lighten-3" href="#!"
-            onclick=" M.toast({html: 'Email Copied to Clipboard!', classes: 'rounded'})"
-       (click)="copyText('amishu197@gmail.com');">
-       <i class="tiny material-icons">email</i> 
-       Email
-      </a>
-    </li>
-          <li><a class="grey-text text-lighten-3" target = "_blank" href="https://twitter.com/notokayraj"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a></li>
-          <li><a class="grey-text text-lighten-3" target = "_blank" href="https://www.linkedin.com/in/amish-raj-b61349153/"><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li>
-          <li><a class="grey-text text-lighten-3" target = "_blank" href="https://www.instagram.com/okayraj/"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a></li>
-        </ul>
-      </div>
     </div>
-  </div>
-  <div class="footer-copyright">
-    <div class="container">
-    © 2020 Amish Raj
-    <!-- <a class="grey-text text-lighten-4 right" href="#!">More Links</a> -->
+    <!-- Job Experience End -->
+
+
+    <!-- Banner Start -->
+    <!-- <div class="banner wow zoomIn" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="section-header text-center">
+                    <p>Reasonable Price</p>
+                    <h2>Get A <span>Special</span> Price</h2>
+                </div>
+                <div class="container banner-text">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. 
+                    </p>
+                    <a class="btn">Pricing Plan</a>
+                </div>
+            </div>
+        </div> -->
+    <!-- Banner End -->
+
+
+    <!-- Portfolio Start -->
+    <div class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                <p>Project Showcase</p>
+                <h2>Projects I've Worked On</h2>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <ul id="portfolio-filter">
+                        <li data-filter="*" class="filter-active">All</li>
+                        <li data-filter=".filter-1">Web Dev</li>
+                        <li data-filter=".filter-2">Mobile Apps</li>
+                        <li data-filter=".filter-3">Analytics</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row portfolio-container">
+                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.0s">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-img">
+                            <img src="img/cd.jpg" alt="Image">
+                        </div>
+                        <div class="portfolio-text">
+                            <h3>Chapter Dashboard</h3>
+                            <a id="myBtn" class="btn">+</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-img">
+                            <img src="img/meanstack.png" alt="Image">
+                        </div>
+                        <div class="portfolio-text">
+                            <h3>Full Stack MEAN Project</h3>
+                            <a id="fullstackBtn" class="btn">+</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-2 wow fadeInUp" data-wow-delay="0.4s">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-img">
+                            <img src="img/quizg.jpeg" alt="Image">
+                        </div>
+                        <div class="portfolio-text">
+                            <h3>QuizG Android App</h3>
+                            <a id="quizgBtn" class="btn">+</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.6s">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-img">
+                            <img src="img/lyriceum2.png" alt="Image">
+                        </div>
+                        <div class="portfolio-text">
+                            <h3>Lyriceum</h3>
+                            <a id="lyriceumBtn" class="btn">+</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="0.8s">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-img">
+                            <img src="img/notes.jpeg" alt="Image">
+                        </div>
+                        <div class="portfolio-text">
+                            <h3>AirThin Notes</h3>
+                            <a id="airthinnotesBtn" class="btn">+</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-1 wow fadeInUp" data-wow-delay="1s">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-img">
+                            <img src="img/coins.jpeg" alt="Image">
+                        </div>
+                        <div class="portfolio-text">
+                            <h3>AirThin Currency Converter</h3>
+                            <a id="airthinccBtn" class="btn">+</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="1s">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-img">
+                            <img src="img/bigdata.jpeg" alt="Image">
+                        </div>
+                        <div class="portfolio-text">
+                            <h3>Big Data & Analytics Projects</h3>
+                            <a id="bigdataBtn" class="btn">+</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 portfolio-item filter-3 wow fadeInUp" data-wow-delay="1s">
+                    <div class="portfolio-wrap">
+                        <div class="portfolio-img">
+                            <img src="img/covid.jpeg" alt="Image">
+                        </div>
+                        <div class="portfolio-text">
+                            <h3>Covid-19 Vaccine Tweets Sentiment Analysis</h3>
+                            <a id="covidBtn" class="btn">+</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--MODALS-->
+
+            <!-- Chapter Modal -->
+            <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 style="color: aliceblue;">Chapter Dashboard</h2>
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        During my internship at Fidelity Investments, I had the opportunity to contribute to the
+                        development of an innovative project management tool called Chapter Dashboard. This tool was
+                        specifically designed to empower Chapter Leaders within the Spotify model, enabling them to
+                        efficiently manage Chapter Members and access squad-related information. <br> <br>
+                        As part of my role, I was responsible for spearheading the front-end and UI development of the
+                        Chapter Dashboard. Leveraging my expertise in Angular 9 and Bootstrap 3, I crafted a seamless
+                        and intuitive user interface, ensuring an enhanced user experience for Chapter Leaders. Adhering
+                        to strict company confidentiality protocols, I cannot disclose specific details such as URLs or
+                        further technological insights. <br>
+                        In addition to my development work, I also took on the creative challenge of designing the
+                        project's logo from scratch. This allowed me to showcase my design skills and contribute to the
+                        overall branding and visual identity of the Chapter Dashboard. <br> <br>
+                        My involvement in this project further strengthened my proficiency in front-end development,
+                        project management, and UI design. It was a valuable experience that not only enhanced my
+                        technical skills but also allowed me to contribute to a cutting-edge solution within a
+                        professional and confidential setting. <br>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Full Stack Modal -->
+            <div id="fullstackModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 style="color: aliceblue;">Full Stack MEAN Project</h2>
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        I successfully completed a comprehensive Udemy course titled "Angular & NodeJS - The MEAN Stack
+                        Guide." Throughout the course, I developed a full stack project using the MEAN stack (MongoDB,
+                        Express.js, Angular, Node.js). By leveraging Angular for the frontend and Node.js with
+                        Express.js for the backend, I built a robust and high-performing web application. This project
+                        enhanced my proficiency in Angular, Node.js, and Express.js, equipping me with valuable hands-on
+                        experience in creating end-to-end applications using the MEAN stack.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quiz G Modal -->
+            <div id="quizgModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 style="color: aliceblue;">Quiz G Android App</h2>
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        As a course requirement of the <b> Advanced Software Paradigms </b> course, I developed an
+                        interactive quiz application in a team of 5 with communication and analytics features. This app
+                        catered to the needs of professors and students, facilitating seamless interactions and
+                        providing valuable performance insights. The app lets professors post quizzes and allows
+                        students to attempt them. By utilizing design documentation and adopting an agile approach, I
+                        ensured optimal results and a user-centered experience.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lyriceum Modal -->
+            <div id="lyriceumModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 style="color: aliceblue;">Lyriceum</h2>
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        Admit it, we all have a secret place where we copy & paste our favorite lyrics. But wouldn't it
+                        be easier to just have it all in one place?
+                        <br> <b> Welcome to Lyriceum </b>
+                        Now search the lyrics to your favorite songs and save your favorite parts immediately. The best
+                        part? Your saved lyrics will always stay on your device. <br> <br>
+                        <a target="_blank" href="https://lyriceum.fail/">Try Lyriceum</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AirThin Notes Modal -->
+            <div id="airthinnotesModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 style="color: aliceblue;">AirThin Notes</h2>
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        AirThin Notes is a Lightweight WebApp that lets you take notes. <br>
+                        No shenanigans, Minimal and Fast . <br><br>
+                        The Best Part? Your notes won't disappear, whether you close your window or your browser itself.
+                        <br><br>
+                        Try <a target="_blank" href="https://amishraj.github.io/airthinnotes/">AirThin Notes</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- AirThin CC Modal -->
+            <div id="airthinccModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 style="color: aliceblue;">AirThin Currency Converter</h2>
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        Another Mini-Project, AirThin Currency Convert is a Lightweight Currency Converter WebApp that
+                        makes use of
+                        the ExchangeRate API in order to fetch correct Currency Rates. <br>
+                        The rates are updated every day to ensure consistency. <br><br>
+                        Try <a target="_blank" href="https://amishraj.github.io/airthincc/">AirThin Currency
+                            Converter</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Big Data Modal -->
+            <div id="bigdataModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 style="color: aliceblue;">Big Data & Analytics Projects</h2>
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        Course projects built as a requirement of CSCI 6444 Introduction to Big Data and Analytics
+                        course
+                    </div>
+                </div>
+            </div>
+
+            <!-- Covid19 Vaccine Tweets Sentiment Analysis Modal -->
+            <div id="covidModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 style="color: aliceblue;">Covid-19 Vaccine Tweets Sentiment Analysis</h2>
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        Course project built as a requirement of CSCI 6364 Machine Learning course
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
-  </div>
-</footer>
+    <!-- Portfolio End -->
 
-  <!--JavaScript at end of body for optimized loading-->
-  <!-- <script type="text/javascript" src="js/materialize.min.js"></script> -->
-  <script src="anime.min.js"></script>
-  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Banner Start -->
+    <!-- <div class="banner wow zoomIn" data-wow-delay="0.1s">
+            <div class="container">
+                <div class="section-header text-center">
+                    <p>Awesome Discount</p>
+                    <h2>Get <span>30%</span> Discount</h2>
+                </div>
+                <div class="container banner-text">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. 
+                    </p>
+                    <a class="btn">Order Now</a>
+                </div>
+            </div>
+        </div> -->
+    <!-- Banner End -->
 
-<script>
-  AOS.init();
-</script>
 
-<script type="text/javascript"> 
- ScrollReveal().reveal('.headline', { delay: 250 });
-  ScrollReveal().reveal('.tablefade', { delay: 350 });
-    ScrollReveal().reveal('.cardfade', { delay: 250 });
-  ScrollReveal().reveal('.cardfade1', { delay: 350 });
-  ScrollReveal().reveal('.cardfade2', { delay: 450 });
+    <!-- Price Start -->
+    <!-- <div class="price" id="price">
+            <div class="container">
+                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <p>Pricing Plan</p>
+                    <h2>Affordable Price</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="price-item">
+                            <div class="price-header">
+                                <div class="price-title">
+                                    <h2>Basic</h2>
+                                </div>
+                                <div class="price-prices">
+                                    <h2><small>$</small>49<span>/ mo</span></h2>
+                                </div>
+                            </div>
+                            <div class="price-body">
+                                <div class="price-description">
+                                    <ul>
+                                        <li>Bootstrap 4</li>
+                                        <li>Font Awesome 5</li>
+                                        <li>Responsive Design</li>
+                                        <li>Browser Compatibility</li>
+                                        <li>Easy To Use</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="price-footer">
+                                <div class="price-action">
+                                    <a class="btn" href="">Order Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.0s">
+                        <div class="price-item featured-item">
+                            <div class="price-header">
+                                <div class="price-title">
+                                    <h2>Standard</h2>
+                                </div>
+                                <div class="price-prices">
+                                    <h2><small>$</small>99<span>/ mo</span></h2>
+                                </div>
+                            </div>
+                            <div class="price-body">
+                                <div class="price-description">
+                                    <ul>
+                                        <li>Bootstrap 4</li>
+                                        <li>Font Awesome 5</li>
+                                        <li>Responsive Design</li>
+                                        <li>Browser Compatibility</li>
+                                        <li>Easy To Use</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="price-footer">
+                                <div class="price-action">
+                                    <a class="btn" href="">Order Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="price-item">
+                            <div class="price-header">
+                                <div class="price-title">
+                                    <h2>Premium</h2>
+                                </div>
+                                <div class="price-prices">
+                                    <h2><small>$</small>149<span>/ mo</span></h2>
+                                </div>
+                            </div>
+                            <div class="price-body">
+                                <div class="price-description">
+                                    <ul>
+                                        <li>Bootstrap 4</li>
+                                        <li>Font Awesome 5</li>
+                                        <li>Responsive Design</li>
+                                        <li>Browser Compatibility</li>
+                                        <li>Easy To Use</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="price-footer">
+                                <div class="price-action">
+                                    <a class="btn" href="">Order Now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    <!-- Price End -->
 
-</script>
 
-<script type="text/javascript">
-$( document ).ready(function(){
-$('.fixed-action-btn').floatingActionButton({
-});
+    <!-- Testimonial Start -->
+    <!-- <div class="testimonial wow fadeInUp" data-wow-delay="0.1s" id="review">
+            <div class="container">
+                <div class="testimonial-icon">
+                    <i class="fa fa-quote-left"></i>
+                </div>
+                <div class="owl-carousel testimonials-carousel">
+                    <div class="testimonial-item">
+                        <div class="testimonial-img">
+                            <img src="img/testimonial-1.jpg" alt="Image">
+                        </div>
+                        <div class="testimonial-text">
+                            <p>
+                                Lorem ipsum dolor sit amet consec adipis elit. Etiam accums lacus eget velit tincid, quis suscip justo dictum. Lorem ipsum dolor sit amet consec adipis elit.
+                            </p>
+                            <h3>Customer Name</h3>
+                            <h4>Profession</h4>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-img">
+                            <img src="img/testimonial-2.jpg" alt="Image">
+                        </div>
+                        <div class="testimonial-text">
+                            <p>
+                                Lorem ipsum dolor sit amet consec adipis elit. Etiam accums lacus eget velit tincid, quis suscip justo dictum. Lorem ipsum dolor sit amet consec adipis elit.
+                            </p>
+                            <h3>Customer Name</h3>
+                            <h4>Profession</h4>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <div class="testimonial-img">
+                            <img src="img/testimonial-3.jpg" alt="Image">
+                        </div>
+                        <div class="testimonial-text">
+                            <p>
+                                Lorem ipsum dolor sit amet consec adipis elit. Etiam accums lacus eget velit tincid, quis suscip justo dictum. Lorem ipsum dolor sit amet consec adipis elit.
+                            </p>
+                            <h3>Customer Name</h3>
+                            <h4>Profession</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    <!-- Testimonial End -->
 
-$(".dropdown-trigger").dropdown();
-$('.sidenav').sidenav();
-    $('.scrollspy').scrollSpy();
-$('.parallax').parallax();
-$('.collapsible').collapsible();
-$('.modal').modal();
-$('.slider').slider();
-$('.tooltipped').tooltip();
 
-});
-</script>
+    <!-- Team Start -->
+    <!-- <div class="team" id="team">
+            <div class="container">
+                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <p>My Team</p>
+                    <h2>Expert Team Members</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.0s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="img/team-1.jpg" alt="Image">
+                            </div>
+                            <div class="team-text">
+                                <h2>Mollie Ross</h2>
+                                <h4>Web Designer</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet consec adipis elit. Etiam accum lacus
+                                </p>
+                                <div class="team-social">
+                                    <a class="btn" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="img/team-2.jpg" alt="Image">
+                            </div>
+                            <div class="team-text">
+                                <h2>Dylan Adams</h2>
+                                <h4>Web Developer</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet consec adipis elit. Etiam accum lacus
+                                </p>
+                                <div class="team-social">
+                                    <a class="btn" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="img/team-3.jpg" alt="Image">
+                            </div>
+                            <div class="team-text">
+                                <h2>Jennifer Page</h2>
+                                <h4>Apps Designer</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet consec adipis elit. Etiam accum lacus
+                                </p>
+                                <div class="team-social">
+                                    <a class="btn" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="team-item">
+                            <div class="team-img">
+                                <img src="img/team-4.jpg" alt="Image">
+                            </div>
+                            <div class="team-text">
+                                <h2>Josh Dunn</h2>
+                                <h4>Apps Developer</h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet consec adipis elit. Etiam accum lacus
+                                </p>
+                                <div class="team-social">
+                                    <a class="btn" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a class="btn" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    <!-- Team End -->
 
-<script>
-  AOS.init();
-</script>
 
+    <!-- Contact Start -->
+    <!-- <div class="contact wow fadeInUp" data-wow-delay="0.1s" id="contact">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-4"></div>
+                        <div class="col-md-8">
+                            <div class="contact-form">
+                                <div id="success"></div>
+                                <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                                    <div class="control-group">
+                                        <input type="text" class="form-control" id="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
+                                        <p class="help-block"></p>
+                                    </div>
+                                    <div class="control-group">
+                                        <input type="email" class="form-control" id="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
+                                        <p class="help-block"></p>
+                                    </div>
+                                    <div class="control-group">
+                                        <input type="text" class="form-control" id="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
+                                        <p class="help-block"></p>
+                                    </div>
+                                    <div class="control-group">
+                                        <textarea class="form-control" id="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
+                                        <p class="help-block"></p>
+                                    </div>
+                                    <div>
+                                        <button class="btn" type="submit" id="sendMessageButton">Send Message</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    <!-- Contact End -->
+
+    <!-- Blog Start -->
+    <!-- <div class="blog" id="blog">
+            <div class="container">
+                <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+                    <p>From Blog</p>
+                    <h2>Latest Articles</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="blog-item wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="blog-img">
+                                <img src="img/blog-1.jpg" alt="Blog">
+                            </div>
+                            <div class="blog-text">
+                                <h2>Lorem ipsum dolor sit amet</h2>
+                                <div class="blog-meta">
+                                    <p><i class="far fa-user"></i>Admin</p>
+                                    <p><i class="far fa-list-alt"></i>Web Design</p>
+                                    <p><i class="far fa-calendar-alt"></i>01-Jan-2045</p>
+                                    <p><i class="far fa-comments"></i>5</p>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet elit. Nullam commodo mattis mi. Nullam eu erat lectus. Proin viverra risus vitae luctus. Proin ut ante, vitae sapien. Fusce sem ac erat rhoncus, ornare mattis nisl massa et eros vitae pulvin
+                                </p>
+                                <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="blog-item wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="blog-img">
+                                <img src="img/blog-2.jpg" alt="Blog">
+                            </div>
+                            <div class="blog-text">
+                                <h2>Lorem ipsum dolor sit amet</h2>
+                                <div class="blog-meta">
+                                    <p><i class="far fa-user"></i>Admin</p>
+                                    <p><i class="far fa-list-alt"></i>Apps Design</p>
+                                    <p><i class="far fa-calendar-alt"></i>01-Jan-2045</p>
+                                    <p><i class="far fa-comments"></i>10</p>
+                                </div>
+                                <p>
+                                    Lorem ipsum dolor sit amet elit. Nullam commodo mattis mi. Nullam eu erat lectus. Proin viverra risus vitae luctus. Proin ut ante, vitae sapien. Fusce sem ac erat rhoncus, ornare mattis nisl massa et eros vitae pulvin
+                                </p>
+                                <a class="btn" href="">Read More <i class="fa fa-angle-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    <!-- Blog End -->
+
+
+    <!-- Footer Start -->
+    <div class="footer wow fadeIn" data-wow-delay="0.3s">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="footer-info">
+                    <h2>Amish Raj</h2>
+                    <h3>2400 Virginia Avenue NW, Washington DC, USA</h3>
+                    <div class="footer-menu">
+                        <p>+1 (202) 560-3280</p>
+                        <p><a href="mailto:amish.raj@gwu.edu" style="color: white;"
+                                target="_blank">amish.raj@gwu.edu</a></p>
+                    </div>
+                    <div class="footer-social">
+                        <a href="https://github.com/amishraj" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/amishraj/" target="_blank"><i
+                                class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="container copyright">
+                <p>&copy; <a href="#">Amish Raj 2023</a>, All Right Reserved</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to top button -->
+    <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+
+    <!-- Pre Loader -->
+    <div id="loader" class="show">
+        <div class="loader"></div>
+    </div>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Modal Javascript -->
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+        function generateModal(modal, btn) {
+
+            // Get the <span> element that closes the modal
+            var span = modal.getElementsByClassName("close")[0];
+
+            // When the user clicks the button, open the modal 
+            btn.onclick = function () {
+                modal.style.display = "block";
+            };
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function () {
+                modal.classList.add('closing');
+                setTimeout(function () {
+                    modal.style.display = 'none';
+                    modal.classList.remove('closing');
+                }, 200);
+            };
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.addEventListener("click", function (event) {
+                if (event.target == modal) {
+                    modal.classList.add('closing');
+                    setTimeout(function () {
+                        modal.style.display = 'none';
+                        modal.classList.remove('closing');
+                    }, 200);
+                }
+            });
+        }
+
+        // Generate modals for different scenarios
+        var chapterModal = document.getElementById("myModal");
+        var chapterBtn = document.getElementById("myBtn");
+        generateModal(chapterModal, chapterBtn);
+
+        var fullstackModal = document.getElementById("fullstackModal");
+        var fullstackBtn = document.getElementById("fullstackBtn");
+        generateModal(fullstackModal, fullstackBtn);
+
+        var quizgModal = document.getElementById("quizgModal");
+        var quizgBtn = document.getElementById("quizgBtn");
+        generateModal(quizgModal, quizgBtn);
+
+        var lyriceumModal = document.getElementById("lyriceumModal");
+        var lyriceumBtn = document.getElementById("lyriceumBtn");
+        generateModal(lyriceumModal, lyriceumBtn);
+
+        var airthinnotesModal = document.getElementById("airthinnotesModal");
+        var airthinnotesBtn = document.getElementById("airthinnotesBtn");
+        generateModal(airthinnotesModal, airthinnotesBtn);
+
+        var airthinccModal = document.getElementById("airthinccModal");
+        var airthinccBtn = document.getElementById("airthinccBtn");
+        generateModal(airthinccModal, airthinccBtn);
+
+        var bigdataModal = document.getElementById("bigdataModal");
+        var bigdataBtn = document.getElementById("bigdataBtn");
+        generateModal(bigdataModal, bigdataBtn);
+
+        var covidModal = document.getElementById("covidModal");
+        var covidBtn = document.getElementById("covidBtn");
+        generateModal(covidModal, covidBtn);
+
+    </script>
 </body>
+
 </html>
