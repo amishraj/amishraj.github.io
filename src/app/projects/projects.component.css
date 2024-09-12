@@ -1,0 +1,85 @@
+  /* PROJECT CARDS */
+
+.cards-section {
+    padding: 100px 40px;
+    background-color: var(--bg-color);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+/* cards */
+
+.cards-section {
+    padding: 20px 40px;
+    /* Reduced padding to bring cards closer to the top */
+    background-color: var(--bg-color);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 cards per row */
+    grid-gap: 20px;
+    /* More spacing between cards */
+}
+
+.card {
+    background-color: var(--bg-color);
+    border: 2px solid #e0e0e0;
+    /* Grey border */
+    padding: 30px;
+    /* Larger padding for bigger cards */
+    border-radius: 15px;
+    box-shadow: 0 6px 12px var(--shadow-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    /* Larger font size for content */
+}
+
+.card h3 {
+    font-size: 2.2rem;
+    /* Larger bold title */
+    font-weight: 800;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 1.5rem;
+    /* Larger description text */
+    color: var(--text-color);
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+    /* 3D hover effect with a stronger lift */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    /* Larger shadow for hover effect */
+}
+  
+  /* Projects Section */
+  .projects-header {
+    padding: 50px 0; /* Adjust padding to space it out */
+    text-align: center; /* Center-align the text */
+  }
+  
+  .projects-title {
+    font-size: 5rem;
+    font-weight: bold;
+    color: var(--primary-color); /* Your purple primary color */
+    margin-bottom: 10px;
+  }
+  
+  .projects-caption {
+    font-size: 1.5rem;
+    color: var(--text-color); /* Text color for the caption */
+    margin-bottom: 30px; /* Spacing before the cards */
+  }
+  
