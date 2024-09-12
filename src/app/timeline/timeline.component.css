@@ -1,0 +1,142 @@
+/* Timeline Section */
+.timeline-section {
+    background-color: var(--bg-color);
+    padding: 100px 20px;
+  }
+  
+  .timeline-title {
+    font-size: 3rem;
+    text-align: center;
+    text-align: left;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+  }
+  
+  .timeline-caption {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  /* Timeline Structure */
+  .timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background-color: var(--primary-color);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1px;
+  }
+  
+  /* Timeline Items */
+  .timeline-item {
+    padding: 20px;
+    position: relative;
+    width: 50%;
+    box-sizing: border-box;
+  }
+  
+  .timeline-item:nth-child(odd) {
+    left: 0;
+    text-align: right;
+  }
+  
+  .timeline-item:nth-child(even) {
+    left: 50%;
+    text-align: left;
+  }
+  
+  .timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    top: 20px;
+  }
+  
+  /* Place the dot on the left for items on the right, and right for items on the left */
+  .timeline-item:nth-child(odd)::after {
+    right: -15px;
+  }
+  
+  .timeline-item:nth-child(even)::after {
+    left: -15px;
+  }
+  
+  /* Card Content */
+  .timeline-content {
+    padding: 20px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border-radius: 10px;
+    box-shadow: 0 6px 12px var(--shadow-color);
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    border: 2px solid var(--border-color);
+  }
+  
+  /* Light and Dark Mode Styling */
+  body.light-mode .timeline-content {
+    border-color: #e0e0e0; /* Light mode border */
+  }
+  
+  body.dark-mode .timeline-content {
+    border-color: #ffffff; /* White border in dark mode */
+  }
+  
+  .timeline-item h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+  }
+  
+  .timeline-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+  
+  .timeline-item p {
+    font-size: 1.2rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .timeline-item {
+      width: 100%;
+      left: 0;
+      text-align: left;
+    }
+  
+    .timeline::after {
+      left: 20px;
+    }
+  
+    .timeline-item::after {
+      left: 20px;
+      right: auto;
+    }
+  }
+
+  .projects-title {
+    font-size: 5rem;
+    font-weight: bold;
+    color: var(--primary-color); /* Your purple primary color */
+    margin-bottom: 10px;
+  }
+
+  .projects-caption {
+    font-size: 1.5rem;
+    color: var(--text-color); /* Text color for the caption */
+    margin-bottom: 30px; /* Spacing before the cards */
+  }
+  
