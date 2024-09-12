@@ -1,0 +1,30 @@
+<header class="main-header">
+  <div class="container">
+    <div class="header-content">
+      <!-- Left side: Title and About Me section -->
+      <div class="title-section">
+        <h1> Hey there 👋🏻 <br> My name is Amish Raj <br> I combine {{ code }} with  <span class="creativity">Creativity</span>.</h1>
+        <p></p>
+        <p class="about-me">
+          I am a results focused <b>Full Stack Developer</b> skilled in technologies such as Angular, Node.js, Java, and SQL. 
+          With a deep love for learning and problem-solving, I strive to create user-friendly solutions that make 
+          an impact. Check out my GitHub and LinkedIn below!
+        </p>
+        <!-- Social Links -->
+        <div class="social-links">
+          <a style="text-decoration: none;" href="https://github.com/amishraj" target="_blank">
+            <i class="devicon-github-original"></i>
+          </a>
+          <a style="text-decoration: none;" href="https://linkedin.com/in/amishraj" target="_blank">
+            <i class="devicon-linkedin-plain"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right side: Bitmoji -->
+      <div class="bitmoji-container" (mousemove)="onMouseMove($event)" (mouseleave)="onMouseLeave()">
+        <img src="assets/bitmojilaptop.png" alt="Waving Bitmoji" class="bitmoji" />
+      </div>
+    </div>
+  </div>
+</header>
